@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gujarat Innovation Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Gujarat Innovation Hub</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#innovators">Innovators</a></li>
+          <li><a href="#ipr">IPR Management</a></li>
+          <li><a href="#startups">Startups</a></li>
+          <li><a href="#investors">Investors</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Empowering Innovation and Entrepreneurship in Gujarat</h2>
+      <p>A unified platform for research, IPR management, and startup growth.</p>
+      <div class="cta-buttons">
+        <a href="#explore" class="btn primary">Explore Research Projects</a>
+        <a href="#apply-ipr" class="btn secondary">Apply for IPR</a>
+        <a href="#join-hub" class="btn secondary">Join the Innovation Hub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="key-features" id="features">
+    <div class="container">
+      <h3>Our Key Features</h3>
+      <div class="features-grid">
+        <div class="feature">
+          <h4>Unified Data Repository</h4>
+          <p>Centralized data for all research projects, startups, and IPR information.</p>
+        </div>
+        <div class="feature">
+          <h4>Transparent Monitoring</h4>
+          <p>Real-time tracking of research progress, startup growth, and IPR status.</p>
+        </div>
+        <div class="feature">
+          <h4>Resource Allocation</h4>
+          <p>Efficient allocation of resources with transparent processes and mentorship support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h3>Our Services</h3>
+      <div class="services-grid">
+        <div class="service">
+          <h4>For Researchers</h4>
+          <p>Track research projects, collaborate with peers, and access resources.</p>
+        </div>
+        <div class="service">
+          <h4>For Startups</h4>
+          <p>Get funding, mentorship, and tools for startup growth and success.</p>
+        </div>
+        <div class="service">
+          <h4>For Policymakers</h4>
+          <p>Utilize data-driven insights to make informed decisions on resource allocation.</p>
+        </div>
+        <div class="service">
+          <h4>For Investors</h4>
+          <p>Access comprehensive evaluations of Gujarat's most promising startups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h3>What People Are Saying</h3>
+      <div class="testimonial-slider">
+        <blockquote>
+          <p>"This platform has streamlined our research processes and provided unparalleled support for IPR management."</p>
+          <cite>– Dr. A. Patel, Researcher</cite>
+        </blockquote>
+        <blockquote>
+          <p>"As a startup founder, I found the mentorship and resource allocation tools to be game-changing."</p>
+          <cite>– N. Shah, Startup Founder</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Insights Section -->
+  <section class="data-insights" id="insights">
+    <div class="container">
+      <h3>Our Impact</h3>
+      <div class="insights-grid">
+        <div class="insight">
+          <h4>1000+</h4>
+          <p>Research Projects Tracked</p>
+        </div>
+        <div class="insight">
+          <h4>500+</h4>
+          <p>IPR Applications Filed</p>
+        </div>
+        <div class="insight">
+          <h4>200+</h4>
+          <p>Startups Supported</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+      </div>
+      <p>&copy; 2024 Gujarat Innovation Hub. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Modal for Login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login to Gujarat Innovation Hub</h2>
+    <form id="loginForm" onsubmit="return validateLoginForm()">
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="text" id="modalEmail" name="email" placeholder="Enter your email">
+        <small id="modalEmailError"></small>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="modalPassword" name="password" placeholder="Enter your password">
+        <small id="modalPasswordError"></small>
+      </div>
+      <button type="submit" class="btn primary">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </div>
+</div>
+
+  <!-- Styles -->
+  <style>
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .hero {
+      background: url('your-background-image.jpg') no-repeat center center/cover;
+      color: #fff;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+    }
+
+    .cta-buttons .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cta-buttons .btn.primary {
+      background-color: #007bff;
+    }
+
+    .cta-buttons .btn.secondary {
+      background-color: #28a745;
+    }
+
+    .key-features, .services, .testimonials, .data-insights {
+      padding: 50px 0;
+    }
+
+    .key-features h3, .services h3, .testimonials h3, .data-insights h3 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .features-grid, .services-grid, .insights-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .feature, .service, .insight {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .insight h4 {
+      font-size: 2.5em;
+      color: #007bff;
+    }
+
+    .testimonial-slider {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    blockquote {
+      font-size: 1.2em;
+      text-align: center;
+      width: 45%;
+    }
+
+    cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-links {
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .features-grid, .services-grid, .insights-grid, .testimonial-slider {
+        flex-direction: column;
+      }
+
+      blockquote {
+        width: 100%;
+      }
+    }
+    /* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group small {
+  color: red;
+  display: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.modal p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal p a {
+  color: #007bff;
+}
+  </style>
+  <script>
+  // Get the modal
+  var modal = document.getElementById("loginModal");
+
+  // Get the button that opens the modal
+  var btn = document.querySelector("a[href='#apply-ipr']");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  function validateLoginForm() {
+    clearErrors();
+    let email = document.getElementById('modalEmail').value;
+    let password = document.getElementById('modalPassword').value;
+    let valid = true;
+
+    if (!validateEmail(email)) {
+      showError('modalEmailError', 'Please enter a valid email.');
+      valid = false;
+    }
+
+    if (password.length < 6) {
+      showError('modalPasswordError', 'Password must be at least 6 characters long.');
+      valid = false;
+    }
+
+    return valid;
+  }
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  }
+
+  function showError(elementId, message) {
+    let errorElement = document.getElementById(elementId);
+    errorElement.innerText = message;
+    errorElement.style.display = 'block';
+  }
+
+  function clearErrors() {
+    let errors = document.querySelectorAll('.modal small');
+    errors.forEach((error) => {
+      error.style.display = 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
